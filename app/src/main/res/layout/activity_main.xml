@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.owangwang.opendemo.MainActivity"
+    android:orientation="vertical">
+<LinearLayout
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:text="设置时间（小时）："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_h"
+        android:inputType="number"
+        android:background="@null"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_h"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</LinearLayout>
+    <LinearLayout
+        android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:text="设置时间（分钟）："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_m"
+        android:inputType="number"
+        android:singleLine="true"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_m"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+</LinearLayout>
+    <Button
+        android:text="设置定时"
+        android:id="@+id/bt_open"
+        android:background="@drawable/bt_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
